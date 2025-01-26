@@ -8,6 +8,6 @@ int main() {
     float a,b;
     scanf("%f %f", &a, &b);
     float output = a*b;
-    printf("%.2f", output);
+    printf("Product: %.2f", output);
     return 0;
 }
