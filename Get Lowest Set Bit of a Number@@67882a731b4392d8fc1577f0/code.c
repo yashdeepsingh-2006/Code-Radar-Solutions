@@ -9,7 +9,7 @@ int main() {
     b = 0;
     int* b_ = &b;
     scanf("%d", &a);
-    while (a>>b & 1 == 1){
+    while ((a>>b) & 1 == 1){
         *_b += 1;
     }
 
