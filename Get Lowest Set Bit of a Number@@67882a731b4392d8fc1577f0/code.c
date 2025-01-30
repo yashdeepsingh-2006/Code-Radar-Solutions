@@ -4,14 +4,8 @@ int main() {
     int a,b;
     b = 0;
     scanf("%d", &a);
-    // while (((a>>b) & 1) == 1){
-    //     break;
-    //     b++;
-    // }
-    while (true) {
-        if(((a>>b) & 1) == 1){
-            break;
-        }
+    while (((a>>1) & 1) == 1){
+        break;
         b++;
     }
 
