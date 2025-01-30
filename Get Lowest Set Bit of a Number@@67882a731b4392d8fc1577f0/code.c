@@ -1,14 +1,11 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
     int a,b;
     b = 0;
     scanf("%d", &a);
     while (((a>>b) & 1) == 1){
+        break;
         b++;
     }
 
