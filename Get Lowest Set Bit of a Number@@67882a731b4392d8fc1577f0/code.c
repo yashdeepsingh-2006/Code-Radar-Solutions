@@ -5,7 +5,10 @@ int main() {
     b = 0;
     scanf("%d", &a);
     while (((a>>b) & 1) == 1){
+        if(((a>>b)&1) != 1){
+
         b++;
+        }
     }
 
     printf("%d", b);
