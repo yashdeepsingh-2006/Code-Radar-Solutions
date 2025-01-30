@@ -8,8 +8,8 @@ int main() {
     int a,b,n;
     b = 0;
     scanf("%d", &a);
-    while (a & b == 1){
-        a >> b;
+    while (a>>b & 1 == 1){
+        b++;
     }
 
     printf("%d", b);
