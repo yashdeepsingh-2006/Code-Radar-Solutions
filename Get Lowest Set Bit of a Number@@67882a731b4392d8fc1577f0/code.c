@@ -5,11 +5,11 @@ char* welcome() {
 }
 
 int main() {
-    int a,b,n;
+    int a,b;
     b = 0;
     scanf("%d", &a);
     while (a>>b & 1 == 1){
-        b++;
+        *&b++;
     }
 
     printf("%d", b);
