@@ -4,8 +4,7 @@ int main() {
     int a,b;
     b = 0;
     scanf("%d", &a);
-    while (((a>>1) & 1) == 1){
-        break;
+    while (((a>>b) & 1) == 1){
         b++;
     }
 
