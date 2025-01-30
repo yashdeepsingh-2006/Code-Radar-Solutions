@@ -5,10 +5,12 @@ int main() {
     b = 0;
     scanf("%d", &a);
     while true{
-        if(((a>>b)&1)==1){
+        if(((a>>b)&1) == 1){
             break;
         }
-        b++;
+        else{
+            b++;
+        }
     }
 
     printf("%d", b);
