@@ -7,9 +7,10 @@ char* welcome() {
 int main() {
     int a,b;
     b = 0;
+    int* b_ = &b;
     scanf("%d", &a);
     while (a>>b & 1 == 1){
-        *&b++;
+        *_b += 1;
     }
 
     printf("%d", b);
