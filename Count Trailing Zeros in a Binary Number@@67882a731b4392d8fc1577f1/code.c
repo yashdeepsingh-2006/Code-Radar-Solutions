@@ -7,7 +7,8 @@ char* welcome() {
 int main() {
     int a;
     int b = 0;
-
+    
+    scanf("%d", &a);
     while (true){
         if (((a)|0) == 0){
             b++;
