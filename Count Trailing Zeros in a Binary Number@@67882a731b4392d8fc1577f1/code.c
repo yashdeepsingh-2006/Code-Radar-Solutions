@@ -7,6 +7,7 @@ int main() {
     scanf("%d", &a);
     while ((a|0) != 0){
         b++;
+        a>>1;
     }
     printf("%d", b);
     return 0;
