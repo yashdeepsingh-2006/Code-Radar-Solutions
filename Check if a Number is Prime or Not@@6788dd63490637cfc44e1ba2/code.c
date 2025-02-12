@@ -13,7 +13,7 @@ int isPrime(int num) {
 }
 
 int main() {
-    int number
+    int number; // Corrected line: added semicolon
     scanf("%d", &number);
 
     if (isPrime(number)) {
