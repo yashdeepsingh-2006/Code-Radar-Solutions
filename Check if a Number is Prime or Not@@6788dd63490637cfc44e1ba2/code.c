@@ -1,23 +1,26 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
+int isPrime(int num) {
+    if (num <= 1) {
+        return 0; // 0 and 1 are not prime numbers
+    }
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            return 0; // num is divisible by i, so it's not prime
+        }
+    }
+    return 1; // num is prime
 }
 
 int main() {
-    int a;
-    scanf("%d", &a);
-    char output[10] = "Prime"
-    if(a>1){
-        for( int i = 2, i<n, i++){
-            if(n%i == 0){
-                output = "Not Prime";
-            }
-        }
-    }else{
-        output = "Prime";
+    int number
+    scanf("%d", &number);
+
+    if (isPrime(number)) {
+        printf("Prime");
+    } else {
+        printf("Not Prime");
     }
 
-    printf("%s", output);
     return 0;
 }
