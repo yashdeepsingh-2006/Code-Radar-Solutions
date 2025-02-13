@@ -9,8 +9,9 @@ int main(){
     }else if(a%2 == 0){
         if(a == 12){
             printf("31");
-        }
+        }else{
         printf("30");
+        }
     }else if(a>12){
         printf("Invalid month");
     }else{
