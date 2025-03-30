@@ -1,10 +1,17 @@
-int isPrime(int num){
-    int n = num/2;
-    for (int i = 0; i<n; i++){
-        if (i % num == 0){
-            return 1;
-        }else{
-            return 0;
+int isPrime(int num) {
+    if (num <= 1) {
+        return 0;
+    }
+    if (num == 2) {
+        return 1; 
+    }
+    if (num % 2 == 0) {
+        return 0; // Other even numbers are not prime
+    }
+    for (int i = 3; i * i <= num; i += 2) {
+        if (num % i == 0) {
+            return 0; 
         }
     }
+    return 1;
 }
